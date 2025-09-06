@@ -1,0 +1,6 @@
+{
+    "name": "DotDotDot",
+    "description": "A minimalist web app for concise, AI-powered text generation. Type a thought, see a brief Gemini response. Clean interface, no distractions.",
+    "requestFramePermissions": [],
+    "prompt": ""
+  }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DotDotDot</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/genai": "https://esm.sh/@google/genai@^0.12.0"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main id="app">
+      <div id="chat-container">
+        <div id="main-message" class="message ai-message">
+          <div class="message-content">
+            Interface initialized. Ready for your input...
+          </div>
+          <div class="message-timer">0.00s</div>
+        </div>
+      </div>
+      <div id="input-area">
+        <span id="input" contenteditable="true" spellcheck="false"></span>
+        <span class="ellipsis-marker">...</span>
+      </div>
+      <div
+        id="output"
+        aria-live="polite"
+        aria-atomic="true"
+        style="display: none"
+      ></div>
+    </main>
+    <div id="timer"></div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
